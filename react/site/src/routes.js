@@ -7,10 +7,12 @@ import PurchaseCompleted from './pages/purchaseCompleted/index';
 
 
 
-
-<BrowserRouter>
-    <Switch>
-        <Route path="/select" exact={true} component={SelectMovie} />
-        <Route path="/purchase-completed" component={PurchaseCompleted} />
-    </Switch>
-</BrowserRouter>
+export default function Routes(){
+    return(
+        <BrowserRouter>
+            <Switch>
+                <Route path="/select" component={SelectMovie} />
+            </Switch>
+        </BrowserRouter>
+    )
+}
