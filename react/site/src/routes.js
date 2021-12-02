@@ -12,6 +12,7 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path="/select" component={SelectMovie} />
+                <Route path="/purchase-completed" component={PurchaseCompleted} />
             </Switch>
         </BrowserRouter>
     )
