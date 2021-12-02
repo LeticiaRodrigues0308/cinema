@@ -5,9 +5,12 @@ import SelectMovie from './pages/selectMovie';
 
 
 
-
-<BrowserRouter>
-    <Switch>
-        <Route path="/select" exact={true} component={SelectMovie} />
-    </Switch>
-</BrowserRouter>
+export default function Routes(){
+    return(
+        <BrowserRouter>
+            <Switch>
+                <Route path="/select" component={SelectMovie} />
+            </Switch>
+        </BrowserRouter>
+    )
+}
