@@ -9,13 +9,14 @@ const Container = styled.div`
 
     background-image: url('/assets/images/fundo-cinema.svg');
 
-    padding: 2em 3em 7em 4em;
+    padding: 3em 3em 10em 4em;
 
-    .titulo {
-        color: #F0A124;
-        font-size: 3.5em;
-        
-        margin-bottom: .5em;
+    .ticket-hover {
+        transition: all ease-in-out .25s;
+    }
+     
+    .ticket-hover:hover {
+        transform: translateY(-1em);
     }
 
     .subtitulo {
@@ -40,10 +41,10 @@ const Container = styled.div`
         color: #767676;
         font-size: 2.5em;
 
-        width: 146px;
-        height: 146px;
+        width: 160px;
+        height: 160px;
 
-        margin-top: -1.3em;
+        margin-top: -2em;
         
         border-radius: 100%;
 

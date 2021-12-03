@@ -1,6 +1,7 @@
 import { Container } from './styled'
 
 import Ticket from './ticket/index'
+import LogoColumn from '../../components/LogoColumn/index'
 
 import { useHistory } from "react-router";
 
@@ -13,10 +14,7 @@ export default function PurchaseCompleted() {
 
     return (
         <Container>
-            <div>
-                <img src="/assets/images/iconCinemonk.svg" alt="erro" />
-                <div className="titulo">CineMonk</div>
-            </div>
+            <LogoColumn />
 
             <div className="box-subtitulo">
                 <div className="subtitulo">Parabéns! Sua compra foi realizada com sucesso.</div>
