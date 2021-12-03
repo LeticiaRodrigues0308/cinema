@@ -5,6 +5,9 @@ const Conteiner = styled.body`
         background-image: url("/assets/images/fundo-cinema.svg");
         background-repeat: no-repeat;
         background-size: cover;
+
+        display: flex;
+        flex-direction: column;
 `
 
 const Cabecalho = styled.header`
@@ -32,7 +35,12 @@ const Texto = styled.article`
             font-size: 3em;
         }
 `
+const Boxes = styled.article`
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+`
 
 
-
-export { Cabecalho, Conteiner, Texto}
+export { Cabecalho, Conteiner, Texto, Boxes}

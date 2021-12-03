@@ -1,6 +1,6 @@
 import React from "react";
-import { Cabecalho, Conteiner, Texto } from "./styled"
-
+import { Boxes, Cabecalho, Conteiner, Texto } from "./styled"
+import LittleBox from "../../components/littleBox";
 
 export default function ticketDate() {
     
@@ -13,9 +13,14 @@ export default function ticketDate() {
             <Texto>
                 <p> Escolha a data que você deseja comprar o ingresso </p>
             </Texto>
-
-
-
+            <Boxes>
+                <LittleBox/>
+                <LittleBox/>
+                <LittleBox/>
+                <LittleBox/>
+                <LittleBox/>
+                <LittleBox/>
+            </Boxes>
         </Conteiner>
     )
 }
