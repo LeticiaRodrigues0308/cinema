@@ -2,29 +2,17 @@ import styled from "styled-components";
 
 
 const Conteiner = styled.body`
+        
+        margin: 0;
+        box-sizing: border-box;
+
         background-image: url("/assets/images/fundo-cinema.svg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150% 100%;
+        background-position: center;
 
         display: flex;
         flex-direction: column;
-`
-
-const Cabecalho = styled.header`
-
-            display: flex;
-            flex-direction: row; 
-
-        img{
-            width: 6em;
-            margin: .5em;
-        }
-
-        h1{
-            color: #f0a124;
-            font-size: 4em;
-            margin: .5em 0px;
-        }
 `
 
 const Texto = styled.article`
@@ -39,8 +27,16 @@ const Boxes = styled.article`
    
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    margin: 2em 2em 4em 2em;
+
+`
+const LittleBoxes = styled.article`
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 `
 
-
-export { Cabecalho, Conteiner, Texto, Boxes}
+export { Conteiner, Texto, Boxes, LittleBoxes}

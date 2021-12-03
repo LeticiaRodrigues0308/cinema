@@ -12,10 +12,14 @@ const Little = styled.div`
 
     border-radius: 1em;
 
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
 
-    margin: 3em;
+    margin: 1em;
+
+    :hover{
+        background-color: #c60a0a;
+    }
 
     .outros{
         font-size: 2em;
