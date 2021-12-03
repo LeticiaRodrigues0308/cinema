@@ -44,7 +44,7 @@ const Container = styled.div`
         border-radius: 54px;
         border: none;
         background: linear-gradient(183.2deg, #861B1B 12.34%, #F80000 148.35%);
-        box-shadow: 8px 5px 5px 2px rgba(0, 0, 0, 0.25);.
+        box-shadow: 8px 5px 5px 2px rgba(0, 0, 0, 0.25);
     }
 `;
 

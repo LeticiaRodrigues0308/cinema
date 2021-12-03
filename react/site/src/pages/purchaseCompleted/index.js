@@ -1,25 +1,36 @@
-import { ContainerPurchaseCompleted } from './styled'
+import { Container } from './styled'
+
+import Ticket from './ticket/index'
+
+import { useHistory } from "react-router";
 
 export default function PurchaseCompleted() {
+    const navigation = useHistory();
+
+    const menu = async () => {
+        navigation.push('/')
+    }
+
     return (
-        <ContainerPurchaseCompleted>
+        <Container>
             <div>
                 <img src="/assets/images/iconCinemonk.svg" alt="erro" />
-                <h1>CineMonk</h1>
+                <div className="titulo">CineMonk</div>
             </div>
 
-            <div>
-                <h2>Parabéns! Sua compra foi realizada com sucesso.</h2>
-                <h2>Agora é só aproveitar o filme :)</h2>
+            <div className="box-subtitulo">
+                <div className="subtitulo">Parabéns! Sua compra foi realizada com sucesso.</div>
+                <div className="subtitulo">Agora é só aproveitar o filme :)</div>
             </div>
 
-            <div className="box-conteudo">
-                <div className="box-tickets">
-                    <img src="" alt="erro" />
-                </div>
-
-                <button className="btn-menu">Menu</button>
+            <div className="box-ticket">
+                <Ticket />
+                <Ticket />
+                <Ticket />
+                <Ticket />
             </div>
-        </ContainerPurchaseCompleted>
+            
+            <button className="btn-menu" onClick={menu}>Menu</button>
+        </Container>
     )
 }
