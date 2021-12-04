@@ -18,6 +18,6 @@ export default function Routes(){
                 <Route path="/ticketDate" component={ticketDate} />
                 {/* <Route path="/languageMovie" component={LanguageMovie}/> */}
             </Switch>
-        </BrowserRouter>
+        </BrowserRouter> 
     )
 }
