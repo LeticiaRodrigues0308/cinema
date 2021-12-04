@@ -8,8 +8,9 @@ const Conteiner = styled.body`
 
         background-image: url("/assets/images/fundo-cinema.svg");
         background-repeat: no-repeat;
-        background-size: 150% 100%;
-        background-position: center;
+        background-position: 20% 100%;
+        background-size: cover;
+        height: 100vh;
 
         display: flex;
         flex-direction: column;

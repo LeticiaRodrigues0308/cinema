@@ -24,5 +24,33 @@ const ContainerLogo = styled.div`
     .icon {
         margin-right: .5em;
     }
+
+    @media(max-width: 1024px) {
+        .logo {
+            font-size: 20px;
+            margin: 1em;
+        }
+        .icon img{
+            margin: .2em 0em;
+            width: 35px;
+        }
+        .titulo {
+            margin: .5em 0em 0em 0em;
+        }
+    }
+
+        @media(max-width: 1280px) {
+            .logo {
+            font-size: 22px;
+            margin: 1em;
+            }
+            .icon img{
+                margin: .3em 0em;
+                width: 38px;
+            }
+            .titulo {
+                margin: .5em 0em 0em 0em;
+            }
+        }
 `
 export {ContainerLogo}
