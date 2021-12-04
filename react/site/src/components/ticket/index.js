@@ -7,7 +7,7 @@ export default function Ticket() {
                 <div className="infos-ticket">
                     <div className="info-assento">A1 MEIA #864825684</div>
                     <div className="info-data">04/06/2021 17:02</div>
-                    <div /* title={} */ className="info-filme">
+                    <div title='Harry Potter e a Pedra Filosofal' className="info-filme">
                         {/* {'harry Potter e a' != null && 'harry Potter e a'.length >= 16
                                 ? 'harry Potter e a'.substr(0, 16) + '...'  : 'harry Potter e a'} */}
                                 Harry Potter e a...

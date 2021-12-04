@@ -13,7 +13,7 @@ const Container = styled.div`
 
     height: 100%;
 
-    padding: 3em 3em 10em 4em;
+    padding: 5em 3em 13em 4em;
 
     .ticket-hover {
         transition: all ease-in-out .25s;
@@ -35,6 +35,7 @@ const Container = styled.div`
         flex-wrap: wrap;
         justify-content: center;
 
+        margin-top: 3em;
         margin-right: 6em;
     }
 
