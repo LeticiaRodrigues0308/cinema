@@ -8,6 +8,10 @@ const Container = styled.div`
     text-align: center;
 
     background-image: url('/assets/images/fundo-cinema.svg');
+    background-position: 20% 100%;
+    background-size: cover;
+
+    height: 100%;
 
     padding: 3em 3em 10em 4em;
 
