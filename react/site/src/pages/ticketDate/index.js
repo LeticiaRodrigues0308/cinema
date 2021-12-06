@@ -3,15 +3,15 @@ import {LittleBoxes, Boxes, Conteiner, Texto} from "./styled"
 import LittleBox from "../../components/littleBox";
 import BigBox from "./bigBox";
 import Logo from "../../components/logo"
-import { useHistory } from "react-router";
+//import { useHistory } from "react-router";
 
 
 export default function TicketDate() {
-    const navigation = useHistory();
+    //const navigation = useHistory();
 
-    const filme = async () => {
+    /*const filme = async () => {
         navigation.push('/select')
-     }
+     }*/
     return(
             <Conteiner>
                 <Logo/>

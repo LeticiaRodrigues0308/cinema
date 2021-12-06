@@ -12,7 +12,7 @@ const Big = styled.div`
 
     border-radius: 1em;
 
-    width: 45rem;
+    width: 40rem;
     height: 25rem;
 
     margin: 2em;

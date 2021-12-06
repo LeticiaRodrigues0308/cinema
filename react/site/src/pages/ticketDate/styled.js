@@ -8,12 +8,27 @@ const Conteiner = styled.body`
 
         background-image: url("/assets/images/fundo-cinema.svg");
         background-repeat: no-repeat;
-        background-position: 20% 100%;
+        background-position: 50% 100%;
         background-size: cover;
-        height: 100vh;
+        height: 170vh;
 
         display: flex;
         flex-direction: column;
+
+        @media(max-width: 1200px){
+            background-repeat: no-repeat;
+            background-position: 15% 100%;
+            background-size: cover;
+            height: 140.5vh;
+
+        }
+
+        @media(max-width: 1040px){
+            background-repeat: no-repeat;
+            background-position: 30% 100%;
+            background-size: cover;
+            height: 175vh;
+        }
 `
 
 const Texto = styled.article`
@@ -21,7 +36,7 @@ const Texto = styled.article`
         p{
             color: #fff;
             text-align: center;
-            font-size: 3em;
+            font-size: 2.5em;
         }
 `
 const Boxes = styled.article`
