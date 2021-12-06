@@ -6,6 +6,7 @@ import Home from './pages/home';
 import PurchaseCompleted from './pages/purchaseCompleted/index';
 import ticketDate from './pages/ticketDate/index';
 import LanguageMovie from './pages/languageMovie';
+import Places from './pages/places';
 
 
 export default function Routes(){
@@ -17,6 +18,8 @@ export default function Routes(){
                 <Route path="/purchase-completed" component={PurchaseCompleted} />
                 <Route path="/ticketDate" component={ticketDate} />
                 <Route path="/languageMovie" component={LanguageMovie}/>
+                <Route path="/places" component={Places}/>  
+
             </Switch>
         </BrowserRouter> 
     )
