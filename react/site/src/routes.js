@@ -5,7 +5,7 @@ import SelectMovie from './pages/selectMovie';
 import Home from './pages/home';
 import PurchaseCompleted from './pages/purchaseCompleted/index';
 import ticketDate from './pages/ticketDate/index';
-// import LanguageMovie from './pages/languageMovie';
+import LanguageMovie from './pages/languageMovie';
 
 
 export default function Routes(){
@@ -16,7 +16,7 @@ export default function Routes(){
                 <Route path="/select" component={SelectMovie} />
                 <Route path="/purchase-completed" component={PurchaseCompleted} />
                 <Route path="/ticketDate" component={ticketDate} />
-                {/* <Route path="/languageMovie" component={LanguageMovie}/> */}
+                <Route path="/languageMovie" component={LanguageMovie}/>
             </Switch>
         </BrowserRouter> 
     )

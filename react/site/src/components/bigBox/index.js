@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router";
 import { Bigbox } from "./styled";
 
-export default function Bigbox (){
+export default function BigBox (){
     const navigation = useHistory();
 
     const filme = async () => {
