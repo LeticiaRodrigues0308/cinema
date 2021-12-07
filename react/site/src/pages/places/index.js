@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import {Container} from "./styled";
 import { Box } from "../../components/box";
 import Fileira1 from "./fileira1";
@@ -6,7 +7,28 @@ import Fileira2 from "./fileira2";
 import Fileira3 from "./fileira3";
 
 
+const Cadeira = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    background-image: url("./assets/images/iconcadeiravermelha.svg");
+    width: 45px;
+    height: 47px;
+
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    margin: 4.5px 6px;
+`;
+
+export {Cadeira};
+
+
 export default function Places(){
+
     return(
         <Container>
            <div className="cabecalho">
@@ -90,7 +112,7 @@ export default function Places(){
                         <Fileira3/>
                     </div>
                </div>
-           </div>     
+           </div>   
         </Container>
     );
 }

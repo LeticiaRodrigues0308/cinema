@@ -1,5 +1,6 @@
 import React from "react";
-import {Fileira, Cadeira} from "./styled";
+import {Fileira} from "./styled";
+import {Cadeira} from "./index";
 
 export default function Fileira2(){
     return(

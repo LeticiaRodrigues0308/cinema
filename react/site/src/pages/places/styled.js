@@ -75,22 +75,7 @@ const Container = styled.div`
     }
 `;
 
-const Cadeira = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;    
 
-    background-image: url("./assets/images/cadeiravermelha.svg");
-    width: 45px;
-    height: 47px;
-
-    color: white;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-
-    margin: 4.5px 6px;
-`;
 
 const Fileira = styled.div`
     display: flex;
@@ -128,4 +113,4 @@ const Fileira = styled.div`
     }
 `;
 
-export { Container, Cadeira, Fileira };
+export { Container, Fileira };
