@@ -41,7 +41,7 @@ export default function Places(){
                     <div className="tit"> Selecione os melhores lugares </div>
                 </div>
            </div>
-
+           <div>
            <div className="box">
 
                 <div className="box1">
@@ -112,7 +112,10 @@ export default function Places(){
                         <Fileira3/>
                     </div>
                </div>
-           </div>   
+               
+           </div>
+           <div className="botao"> <button> Próximo </button> </div>
+           </div>
         </Container>
     );
 }

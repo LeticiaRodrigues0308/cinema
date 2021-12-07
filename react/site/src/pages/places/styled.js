@@ -44,6 +44,7 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        
         width: 1062px;
         height: 533px;
 
@@ -73,6 +74,25 @@ const Container = styled.div`
     .fil1:nth-child(8){
         margin: 44px 0px 0px 0px;
     }
+
+    .botao{
+        padding-left: 65em;
+        font-weight: bold;    
+
+    }
+
+    .botao button{ 
+        position: absolute;
+        width: 146px;
+        height: 146px;
+        font-size: 32px;
+        text-align: center;
+        border-radius: 50%;
+        border: none;
+        background: radial-gradient(50% 50% at 50% 50%, #F4F4F4 0%, #C1C1C1 100%);
+
+    }
+
 `;
 
 
