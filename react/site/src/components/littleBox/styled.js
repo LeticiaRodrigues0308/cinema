@@ -9,11 +9,12 @@ const Little = styled.div`
 
     background-color: #aa0a0a;
     color: #fff;
+    font-family: monospace;
 
-    border-radius: 1em;
+    border-radius: .8em;
 
-    width: 12em;
-    height: 12em;
+    width: 10.7em;
+    height: 9.7em;
 
     margin: 1em;
 
@@ -22,11 +23,11 @@ const Little = styled.div`
     }
 
     .outros{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .data_hora{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
 `

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Big = styled.div`
 
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -9,11 +10,12 @@ const Big = styled.div`
 
     background-color: #c60a0a;
     color: #fff;
+    font-family: monospace;
 
     border-radius: 1em;
 
-    width: 40rem;
-    height: 25rem;
+    width: 23rem;
+    height: 21rem;
 
     margin: 2em;
 
@@ -22,11 +24,11 @@ const Big = styled.div`
     }
 
     .outros{
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .data{
-        font-size: 6em;
+        font-size: 4.5em;
         margin: .5em;
     }
 
