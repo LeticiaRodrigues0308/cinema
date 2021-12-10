@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default function BoxMovie() {
+export default function BoxMovie(props) {
     return (
         <ContainerMovie>
                 <div className="img"> <img src="../assets/images/filme.svg" alt=""/></div>

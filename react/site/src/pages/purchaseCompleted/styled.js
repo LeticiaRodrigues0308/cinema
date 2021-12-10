@@ -64,6 +64,9 @@ const Container = styled.div`
         background-color: #bababa;
         transition-duration: 0.5s;
     }
+
+    @media(min-width: 1900px) {
+        height: 100vh;
 `
 
 export { Container }
