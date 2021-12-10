@@ -16,7 +16,7 @@ export default function TicketDate() {
             <Conteiner>
                 <Logo/>
                 <Texto>
-                    <p> Escolha a data que você deseja comprar o ingresso </p>
+                    <p> Escolha a data que você deseja comprar o ingresso. </p>
                 </Texto>
                 <Boxes>
                     <BigBox/>
