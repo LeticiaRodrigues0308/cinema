@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import { Little } from "./styled";
 
 
-export default function LittleBox (){
+export default function LittleBox (props) {
     const navigation = useHistory();
 
     const filme = async () => {

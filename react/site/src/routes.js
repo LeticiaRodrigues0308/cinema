@@ -18,7 +18,7 @@ export default function Routes(){
                 <Route path="/purchase-completed" component={PurchaseCompleted} />
                 <Route path="/ticketDate" component={ticketDate} />
                 <Route path="/languageMovie" component={LanguageMovie}/>
-                <Route path="/places" component={Places}/>  
+                <Route path="/places" component={Places}/>
 
             </Switch>
         </BrowserRouter> 
