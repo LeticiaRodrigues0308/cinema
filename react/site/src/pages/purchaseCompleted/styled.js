@@ -13,7 +13,9 @@ const Container = styled.div`
 
     height: 100%;
 
-    padding: 5em 3em 13em 4em;
+    padding: 4.4em 3em 13em 4em;
+
+    user-select: none;
 
     .ticket-hover {
         transition: all ease-in-out .25s;
