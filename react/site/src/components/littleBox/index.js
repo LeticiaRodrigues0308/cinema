@@ -11,9 +11,9 @@ export default function LittleBox (props) {
     }
     return(
         <Little onClick={filme}>
-            <b className="outros">Sábado</b>
-            <b className="data_hora">05</b>
-            <b className="outros">MAIO</b>
+            <b className="outros">{props.info.diaSemana}</b>
+            <b className="data_hora">{props.info.dia}</b>
+            <b className="outros">{props.info.mes}</b>
         </Little>
     )
 }

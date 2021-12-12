@@ -111,7 +111,9 @@ app.get('/availableMovies/:date', async (req, resp) => {
 
     let movies = await
         dbSessoes
-            .find({ data: date })
+            .find(
+                { data: date }
+            )
             .project({ _id: 0 })
             .toArray();
     

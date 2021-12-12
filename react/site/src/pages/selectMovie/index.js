@@ -27,12 +27,9 @@ export default function SelectMovie() {
                     <div className="texto">Selecione o filme que deseja assistir</div>
                 </div>
                 <div className="boxes">
-                    <BoxMovie />
-                    <BoxMovie />
-                    <BoxMovie />
-                    <BoxMovie />
-                    <BoxMovie />
-                    <BoxMovie />
+                    {movies.map((item) => 
+                        <BoxMovie info={item} />
+                    )}
                 </div>
         </ContainerSelect>
     )

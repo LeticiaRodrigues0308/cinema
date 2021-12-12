@@ -30,15 +30,12 @@ export default function TicketDate() {
                 </Texto>
                 <Boxes>
 
-                     <BigBox  />
+                     <BigBox />
 
                     <LittleBoxes>
-                        <LittleBox /> 
-                        <LittleBox /> 
-                        <LittleBox /> 
-                        <LittleBox /> 
-                        <LittleBox /> 
-                        <LittleBox /> 
+                        {days.map((item) => 
+                            <LittleBox info={item} />
+                        )}
                     </LittleBoxes>
 
                 </Boxes>

@@ -15,10 +15,10 @@ export default function Routes(){
             <Switch>
                 <Route path="/" exact={true} component={Home}/>
                 <Route path="/select" component={SelectMovie} />
-                <Route path="/purchase-completed" component={PurchaseCompleted} />
                 <Route path="/ticketDate" component={ticketDate} />
                 <Route path="/languageMovie" component={LanguageMovie}/>
                 <Route path="/places" component={Places}/>
+                <Route path="/purchase-completed" component={PurchaseCompleted} />
 
             </Switch>
         </BrowserRouter> 
