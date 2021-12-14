@@ -58,8 +58,6 @@ const LittleBoxes = styled.article`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
 `
 
 export { Conteiner, Texto, Boxes, LittleBoxes}
