@@ -1,7 +1,7 @@
 import { Container } from './styled'
 
 import Ticket from '../../components/ticket/index'
-import LogoColumn from '../../components/LogoColumn/'
+import LogoColumn from '../../components/logoColumn/index'
 
 import { useHistory } from "react-router";
 
