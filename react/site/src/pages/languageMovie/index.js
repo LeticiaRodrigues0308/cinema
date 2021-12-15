@@ -1,11 +1,27 @@
-import React from "react";
-import {Container} from "./styled";
+import { React, useState, useEffect } from "react";
+
+import { Container } from "./styled";
+
 import Logo from '../../components/logo'
 import LittleBox from '../../components/littleBox'
 import Bigbox from '../../components/bigBox'
 
-export default function LanguageMovie(){
-    return(
+import Api from '../../service/api.js'
+const api = new Api();
+
+export default function LanguageMovie() {
+    const [/* movies */, setMovies] = useState([])
+
+    async function showAvailableMovies(date) {
+        let r = await api.availableMovies(date)
+        setMovies(r)
+    }
+
+    useEffect(() => {
+        showAvailableMovies();
+    }, [])
+
+    return (
         <Container>
             <div className="cabecalho">
                 <Logo/>

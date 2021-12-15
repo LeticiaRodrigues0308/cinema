@@ -56,6 +56,7 @@ function getMonthName(data) {
     }
 }
 
+// GET DIAS DISPONÍVEIS //
 
 app.get('/availableDays', async (req, resp) => {
 
@@ -106,6 +107,10 @@ app.get('/availableDays', async (req, resp) => {
     resp.send(days);
 })
 
+
+
+// GET FILMES DISPONÍVEIS //
+
 app.get('/availableMovies/:date', async (req, resp) => {
     let { date } = req.params;
 
@@ -124,6 +129,91 @@ app.get('/movie/cover', async (req, resp) => {
     let { imagePath } = req.query;
     let dirname = path.resolve();
     resp.sendFile(imagePath, { root: path.join(dirname) })
+});
+
+
+
+// GET SESSÕES DISPONÍVEIS //
+
+app.get('/availableSessions', async (req, resp) => {
+    let { date, movie } = req.query;
+
+    let session = await
+        dbSessoes.findOne({
+            'data': date,
+            'filme.nome': movie
+        });
+    
+    resp.send(session.horarios);
+});
+
+
+
+// GET ASSENTOS DISPONÍVEIS //
+
+app.get('/availableSeats', async (req, resp) => {
+    let { date, movie, hour, room } = req.query
+
+    let seats = await
+        dbSeats.find({
+            'data': date,
+            'filme': movie,
+            'hora': hour,
+            'sala': room
+        })
+        .sort({
+            'lugar.letra': 1,
+            'lugar.numero': 1,
+        })
+        .toArray();
+    
+    
+    let fileiras = [];
+    let fileiraObj = {};
+
+    for (let seat of seats) {
+        if (seat.lugar.letra !== fileiraObj.fileira) {
+            fileiraObj = {
+                fileira: seat.lugar.letra,
+                lugares: []
+            }
+            fileiras.push(fileiraObj);
+        }
+
+        fileiraObj.lugares.push({
+            numero: seat.lugar.numero,
+            situacao: seat.lugar.situacao,
+            usuario: seat.lugar.usuario
+        })
+    }
+    
+    
+    resp.send(fileiras);
+});
+
+
+
+// GET ASSENTO RESERVADO //
+
+app.put('/reserveSeat', async (req, resp) => {
+    let { seat: { date, movie, hour, room, letter, number }, user } = req.body
+
+    await dbSeats.updateOne({
+        'data': date,
+        'filme': movie,
+        'hora': hour,
+        'sala': room,
+        'lugar.letra': letter,
+        'lugar.numero': number
+    }, {
+        '$set': {
+            'lugar.situacao': 'Reservado',
+            'lugar.usuario': user,
+            'lugar.dataReserva': new Date()
+        }
+    })
+
+    resp.sendStatus(200);
 });
 
 

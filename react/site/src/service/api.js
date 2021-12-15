@@ -19,4 +19,9 @@ export default class Api {
         let r = await api.get(`/movie/cover?imagePath=${imagem}`);
         return r.data;
     }
+
+    async availableSessions(date, movie) {
+        let r = await api.get(`/availableSessions?date=${date}&movie=${movie}`);
+        return r.data;
+    }
 }
